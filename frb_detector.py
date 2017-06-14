@@ -119,7 +119,6 @@ if __name__ == "__main__":
     import Gnuplot
     
     parser = argparse.ArgumentParser(description="Detects FRB's in candidates file")
-    parser.add_argument('gdm', type=float)
     parser.add_argument('-cands_file', default="all_candidates.dat")
 
     parser.add_argument('-snr_cut', type=float, default=10)
@@ -163,7 +162,7 @@ if __name__ == "__main__":
     if verbose:
       sys.stderr.write ("Loaded %i candidates\n" % len(all_cands))
     
-    classifier = Classifier(math.fabs(args.gdm))
+    classifier = Classifier(math.fabs(0))
     classifier.snr_cut = args.snr_cut
     classifier.filter_cut = args.filter_cut
     classifier.nbeams_cut = args.nbeams_cut
