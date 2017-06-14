@@ -22,13 +22,16 @@ def canplots(filter_cut, snr_cut = 10, max_cands_per_sec = 1, nbeams_cut = 1):
 
 if name == "__main__":
 
-	parser.add_option("--snr_cut", action='store', dest='snr_cut', default=6.0, type=float,
-                help="Post Heimdall: SNR cut for candidate selection (Default: 6.0)")	
-	parser.add_option("--filter_cut", action='store', dest='filter_cut', default=16.0, type=int,
-                help="Post Heimdall: Window size or filter cut for candidate selection (Default: 16.0)")
-	parser.add_option("--max_cands_per_sec", action='store', dest='max_cands_per_sec', default=2.0, type=float,
-                help="Post Heimdall: Maximum allowed candidate per sec (Default: 2.0)")
+	parser = argparse.ArgumentParser(description='FRB_candidate parameters')
+	parser.add_argument('-filter_cut', type=int, help='Post Heimdall: Window size or filter cut for candidate selection (Default: 16.0)')
+	parser.add_argument('-snr_cut', type=float, help='Post Heimdall: SNR cut for candidate selection (Default: 10.0)')
+	parser.add_argument('-max_cands_per_sec', type=float, help='Post Heimdall: Maximum allowed candidate per sec (Default: 1.0)')
 
+	args = parser.parse_args()
+
+	filter_cut = args.filter_cut
+	snr_cut = args.snr_cut
+	max_cands_per_sec = args.max_cands_per_sec
 
 	candplots(filter_cut, snr_cut, max_cands_per_sec)
 
