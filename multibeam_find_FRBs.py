@@ -3,15 +3,15 @@ import os
 import argparse
 import subprocess
 
-def canplots(filter_cut, snr_cut = 10, max_cands_per_sec = 1, nbeams_cut = 1):
+def candplots(filter_cut, snr_cut = 10, max_cands_per_sec = 1, nbeams_cut = 1):
 	# missing beam mask, potentially add later
-	subprocess.call("rm *_all.cand")
-	subprocess.call("rm *.ar")
-	subprocess.call("coincidencer *.cand")	
-	subprocess.call("trans_gen_overview.py -cands_file *_all.cand")
+	#subprocess.call("rm *_all.cand")
+	#subprocess.call("rm *.ar")
+	#subprocess.call("coincidencer *.cand")	
+	#subprocess.call("trans_gen_overview.py -cands_file *_all.cand")
 	# subprocess.call("mv overview_1024x768.tmp.png %s.overview.png" % (source_name))
-	subprocess.call("frb_detector.py -cands_file *_all.cand -snr_cut %f -filter_cut %d -nbeams_cut %d -max_cands_per_sec %f -verbose" % (snr_cut, filter_cut, nbeams_cut, max_cands_per_sec,minMem))
-	subprocess.call("frb_detector.py -cands_file *_all.cand -snr_cut %f -filter_cut %d -nbeams_cut %d -max_cands_per_sec %f > FRBcand" % (snr_cut, max_cands_per_sec,minMem))
+	subprocess.call("frb_detector.py -cands_file *_all.cand -snr_cut %f -filter_cut %d -nbeams_cut %d -max_cands_per_sec %f -verbose" % (snr_cut, filter_cut, nbeams_cut, max_cands_per_sec)
+	subprocess.call("frb_detector.py -cands_file *_all.cand -snr_cut %f -filter_cut %d -nbeams_cut %d -max_cands_per_sec %f > FRBcand" % (snr_cut, max_cands_per_sec)
 	
 
 	if(os.stat("FRBcand").st_size is not 0):
@@ -20,7 +20,7 @@ def canplots(filter_cut, snr_cut = 10, max_cands_per_sec = 1, nbeams_cut = 1):
 		print "No candidate found"
 		return
 
-if name == "__main__":
+if __name__ == "__main__":
 
 	parser = argparse.ArgumentParser(description='FRB_candidate parameters')
 	parser.add_argument('-filter_cut', type=int, help='Post Heimdall: Window size or filter cut for candidate selection (Default: 16.0)')
