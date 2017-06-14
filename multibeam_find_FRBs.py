@@ -3,13 +3,13 @@ import os
 import argparse
 import subprocess
 
-def canplots(fil_file, source_name, snr_cut = 10, filter_cut, max_cands_per_sec = 1, nbeams_cut = 1, noplot):
+def canplots(filter_cut, snr_cut = 10, max_cands_per_sec = 1, nbeams_cut = 1):
 	# missing beam mask, potentially add later
 	subprocess.call("rm *_all.cand")
 	subprocess.call("rm *.ar")
 	subprocess.call("coincidencer *.cand")	
 	subprocess.call("trans_gen_overview.py -cands_file *_all.cand")
-	subprocess.call("mv overview_1024x768.tmp.png %s.overview.png" % (source_name))
+	# subprocess.call("mv overview_1024x768.tmp.png %s.overview.png" % (source_name))
 	subprocess.call("frb_detector.py -cands_file *_all.cand -snr_cut %f -filter_cut %d -nbeams_cut %d -max_cands_per_sec %f -verbose" % (snr_cut, filter_cut, nbeams_cut, max_cands_per_sec,minMem))
 	subprocess.call("frb_detector.py -cands_file *_all.cand -snr_cut %f -filter_cut %d -nbeams_cut %d -max_cands_per_sec %f > FRBcand" % (snr_cut, max_cands_per_sec,minMem))
 	
@@ -19,6 +19,19 @@ def canplots(fil_file, source_name, snr_cut = 10, filter_cut, max_cands_per_sec 
 	else:
 		print "No candidate found"
 		return
+
+if name == "__main__":
+
+	parser.add_option("--snr_cut", action='store', dest='snr_cut', default=6.0, type=float,
+                help="Post Heimdall: SNR cut for candidate selection (Default: 6.0)")	
+	parser.add_option("--filter_cut", action='store', dest='filter_cut', default=16.0, type=int,
+                help="Post Heimdall: Window size or filter cut for candidate selection (Default: 16.0)")
+	parser.add_option("--max_cands_per_sec", action='store', dest='max_cands_per_sec', default=2.0, type=float,
+                help="Post Heimdall: Maximum allowed candidate per sec (Default: 2.0)")
+
+
+	candplots(filter_cut, snr_cut, max_cands_per_sec)
+
 
 	#plotting stuff
 	# extime = 1.0
