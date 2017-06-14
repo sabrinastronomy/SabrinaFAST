@@ -43,4 +43,3 @@ if __name__ == "__main__":
 	for folder in folders:
 		wget_folder(folder, files, website)
 		j+=1
-
