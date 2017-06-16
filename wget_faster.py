@@ -36,10 +36,11 @@ if __name__ == "__main__":
 			for j in range(10, 14):
 				filename = str(j) + "/" + suffix
 				files_wanted_folders[i].append(filename)
-		print(len(files_wanted_folders[i]))
 		i+=1
 
 	j = 0
 	for folder in folders:
+		print(folder)
+		files = files_wanted_folders[j]
 		wget_folder(folder, files, website)
 		j+=1
