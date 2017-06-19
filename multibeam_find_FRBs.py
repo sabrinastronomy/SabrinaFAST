@@ -4,7 +4,7 @@ import argparse
 import subprocess
 import numpy as np
 
-def candplots(path_directory, filter_cut, snr_cut=10, max_cands_per_sec=1, nbeams_cut=1):
+def FRBDetector(path_directory, filter_cut, snr_cut=10, max_cands_per_sec=1, nbeams_cut=1):
     # missing beam mask, potentially add later
     os.chdir(path_directory)
     subprocess.call(
@@ -15,12 +15,9 @@ def candplots(path_directory, filter_cut, snr_cut=10, max_cands_per_sec=1, nbeam
     if (os.stat("FRBcand").st_size is not 0):
         frb_cands = np.loadtxt("FRBcand", dtype={'names': ('snr', 'time', 'samp_idx', 'dm', 'filter', 'prim_beam'),
                                                 'formats': ('f4', 'f4', 'i4', 'f4', 'i4', 'i4')})
-        print("'snr', 'time', 'samp_idx', 'dm', 'filter', 'prim_beam'")
-	print(frb_cands)
     else:
-        print
-    "No candidate found"
-    return
+        print("No candidate found")
+        return
 
 
 if __name__ == "__main__":
@@ -40,4 +37,4 @@ if __name__ == "__main__":
     snr_cut = args.snr_cut
     max_cands_per_sec = args.max_cands_per_sec
 
-    candplots(path_directory, filter_cut, snr_cut, max_cands_per_sec)
+    FRBDetector(path_directory, filter_cut, snr_cut, max_cands_per_sec)
