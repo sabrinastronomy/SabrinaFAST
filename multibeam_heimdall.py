@@ -52,12 +52,12 @@ def run_heimdall_on_directory(directory, folder_name, parallel):
 
 
 def coincidencer(files):
-    subprocess.call("coincidencer " + files)
+    subprocess.call("coincidencer " + files, shell = True)
 
 
 if dest_directory is not None:
     run_heimdall_on_directory(source_directory, dest_directory, parallel)
-    coincidencer(os.listdir(dest_directory))
+    coincidencer(os.listdir(dest_directory + "_candidates"))
     process = "standard"
     if parallel:
         process = "parallel"
