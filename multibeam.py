@@ -25,10 +25,7 @@ class multibeamFRBFinder:
 
     @staticmethod
     def run_heimdall(input_file, output_directory, dm_min, dm_max, dm_tol, rfi_tol, boxcar_max):
-        subprocess.call(
-            "heimdall -f " + input_file + " -output_dir " + output_directory + " -dm " + str(dm_min) + " " + str(
-                dm_max) + " -dm_tol " + dm_tol + " -rfi_tol " + str(rfi_tol) + " -boxcar_max " + str(boxcar_max),
-            shell=True)
+        subprocess.call("heimdall -f %s -output_dir %s -dm %d %d -dm_tol %f -rfi_tol %f -boxcar_max %d" % (input_file, output_directory, dm_min, dm_max, dm_tol, rfi_tol, boxcar_max), shell=True)
 
     @staticmethod
     def coincidencer():
