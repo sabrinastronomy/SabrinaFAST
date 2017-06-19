@@ -74,9 +74,9 @@ class multibeamFRBFinder:
 
 
 class FRBs(multibeamFRBFinder):
-    def __init__(self, FRB_cand_filename, origin, parallel, dm_min, dm_max, dm_tol, rfi_tol, boxcar_max,
-                 snr_cut, filter_cut, max_cands_per_sec, nbeams_cut):
-        super(FRBs, self).__init__(FRB_cand_filename, origin, parallel, dm_min, dm_max, dm_tol, rfi_tol,
+    def __init__(self, FRB_cand_filename, origin, parallel, dm_min, dm_max, dm_tol=1.01, rfi_tol=3,
+                 boxcar_max=16, snr_cut=10, filter_cut=16, max_cands_per_sec=1, nbeams_cut=1):
+        multibeamFRBFinder.__init__(self, FRB_cand_filename, origin, parallel, dm_min, dm_max, dm_tol, rfi_tol,
                                    boxcar_max, snr_cut, filter_cut, max_cands_per_sec, nbeams_cut)
         self.multibeam()
         if os.stat(self.FRB_cand_filename).st_size is not 0:  # st_size: size of file, in bytes
@@ -91,7 +91,7 @@ class FRBs(multibeamFRBFinder):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Get directory information and FRB candidate search parameters')
 
-    parser.add_argument('-FRB_file', type=str, help='Specify where FRB candidate file will be located')
+    parser.add_argument('-FRB_file', type=str, help='Specify where FRB candidate files will be located')
     parser.add_argument('-d', type=str, help='directory where beam files are located')
     parser.add_argument('-parallel', type=int, help='Heimdall: enable parallel processing')
     parser.add_argument('-dm_min', type=int, help='Heimdall: minimum DM')
