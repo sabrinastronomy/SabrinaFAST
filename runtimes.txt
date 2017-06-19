@@ -1,0 +1,270 @@
+Beam 0 initiated.
+Beam 1 initiated.
+Beam 2 initiated.
+Beam 3 initiated.
+Beam 4 initiated.
+Beam 5 initiated.
+Beam 6 initiated.
+Beam 7 initiated.
+Beam 8 initiated.
+Beam 9 initiated.
+Beam 10 initiated.
+Beam 11 initiated.
+Beam 12 initiated.
+standard0
+Total analysis time for standard processing: 4045.34811902
+Beam 0 initiated.
+Beam 1 initiated.
+Beam 2 initiated.
+Beam 3 initiated.
+Beam 4 initiated.
+Beam 5 initiated.
+Beam 6 initiated.
+Beam 7 initiated.
+Beam 8 initiated.
+Beam 9 initiated.
+Beam 10 initiated.
+Beam 11 initiated.
+Beam 12 initiated.
+parallel1
+Total analysis time for parallel processing: 870.602324963
+Beam 0 initiated.
+Beam 1 initiated.
+Beam 2 initiated.
+Beam 3 initiated.
+Beam 4 initiated.
+Beam 5 initiated.
+Beam 6 initiated.
+Beam 7 initiated.
+Beam 8 initiated.
+Beam 9 initiated.
+Beam 10 initiated.
+Beam 11 initiated.
+Beam 12 initiated.
+standard0
+Total analysis time for standard processing: 10040.962404
+Beam 0 initiated.
+Beam 1 initiated.
+Beam 2 initiated.
+Beam 3 initiated.
+Beam 4 initiated.
+Beam 5 initiated.
+Beam 6 initiated.
+Beam 7 initiated.
+Beam 8 initiated.
+Beam 9 initiated.
+Beam 10 initiated.
+Beam 11 initiated.
+Beam 12 initiated.
+parallel1
+Total analysis time for parallel processing: 2163.05080509
+Beam 0 initiated.
+Beam 1 initiated.
+Beam 2 initiated.
+Beam 3 initiated.
+Beam 4 initiated.
+Beam 5 initiated.
+Beam 6 initiated.
+Beam 7 initiated.
+Beam 8 initiated.
+Beam 9 initiated.
+Beam 10 initiated.
+Beam 11 initiated.
+Beam 12 initiated.
+standard0
+Total analysis time for standard processing: 43145.2604959
+Beam 0 initiated.
+Beam 1 initiated.
+Beam 2 initiated.
+Beam 3 initiated.
+Beam 4 initiated.
+Beam 5 initiated.
+Beam 6 initiated.
+Beam 7 initiated.
+Beam 8 initiated.
+Beam 9 initiated.
+Beam 10 initiated.
+Beam 11 initiated.
+Killed
+Killed
+Killed
+DEDISP ERROR: Memory allocation failedDERROR: Pipeline execution failed
+     ERROR: Pipeline execution failed
+     
+ERROR: Pipeline execution failed
+       Memory allocation failed
+Killed
+Beam 12 initiated.
+parallel1
+Total analysis time for parallel processing: 224.68769908
+Beam 0 initiated.
+Beam 1 initiated.
+Beam 2 initiated.
+Beam 3 initiated.
+Beam 4 initiated.
+Beam 5 initiated.
+Beam 6 initiated.
+Beam 7 initiated.
+Beam 8 initiated.
+Beam 9 initiated.
+Beam 10 initiated.
+Beam 11 initiated.
+Beam 12 initiated.
+standard0
+Total analysis time for standard processing: 2807.47407508
+Beam 0 initiated.
+Beam 1 initiated.
+Beam 2 initiated.
+Beam 3 initiated.
+Beam 4 initiated.
+Beam 5 initiated.
+Beam 6 initiated.
+Beam 7 initiated.
+Beam 8 initiated.
+Beam 9 initiated.
+Beam 10 initiated.
+Beam 11 initiated.
+Killed
+Killed
+Killed
+Killed
+DEDISP ERROR: Memory allocation failed
+ERROR: Pipeline execution failed
+       Memory allocation failed
+DEDISP ERROR: Memory allocation failed
+ERROR: Pipeline execution failed
+       Memory allocation failed
+DEDISP ERROR: Memory allocation failed
+ERROR: Pipeline execution failed
+       Memory allocation failed
+DEDISP ERROR: Memory allocation failed
+ERROR: Pipeline execution failed
+       Memory allocation failed
+DEDISP ERROR: Memory allocation failed
+ERROR: Pipeline execution failed
+       Memory allocation failed
+DEDISP ERROR: Memory allocation failed
+ERROR: Pipeline execution failed
+       Memory allocation failed
+Beam 12 initiated.
+parallel1
+Total analysis time for parallel processing: 29.1077828407
+Beam 0 initiated.
+Beam 1 initiated.
+Beam 2 initiated.
+Beam 3 initiated.
+Beam 4 initiated.
+Beam 5 initiated.
+Beam 6 initiated.
+Beam 7 initiated.
+Beam 8 initiated.
+Beam 9 initiated.
+Beam 10 initiated.
+Beam 11 initiated.
+Beam 12 initiated.
+standard0
+Total analysis time for standard processing: 657.992336988
+Beam 0 initiated.
+Beam 1 initiated.
+Beam 2 initiated.
+Beam 3 initiated.
+Beam 4 initiated.
+Beam 5 initiated.
+Beam 6 initiated.
+Beam 7 initiated.
+Beam 8 initiated.
+Beam 9 initiated.
+Beam 10 initiated.
+Beam 11 initiated.
+Beam 12 initiated.
+parallel1
+Total analysis time for parallel processing: 709.36232686
+Beam 0 initiated.
+Beam 1 initiated.
+Beam 2 initiated.
+Beam 3 initiated.
+Beam 4 initiated.
+Beam 5 initiated.
+Beam 6 initiated.
+Beam 7 initiated.
+Beam 8 initiated.
+Beam 9 initiated.
+Beam 10 initiated.
+Beam 11 initiated.
+Beam 12 initiated.
+standard0
+Total analysis time for standard processing: 2655.60213804
+Beam 0 initiated.
+Beam 1 initiated.
+Beam 2 initiated.
+Beam 3 initiated.
+Beam 4 initiated.
+Beam 5 initiated.
+Beam 6 initiated.
+Beam 7 initiated.
+Beam 8 initiated.
+Beam 9 initiated.
+Beam 10 initiated.
+Beam 11 initiated.
+Killed
+Killed
+Killed
+Killed
+DEDISP ERROR: Memory allocation failed
+ERROR: Pipeline execution failedDEDISP ERROR: Memory allocation failed
+ERROR: Pipeline execution failed
+       Memory allocation failed
+DEDISP ERROR: Memory allocation failed
+ERROR: Pipeline execution failed
+       Memory allocation failed
+DEDISP ERROR: Memory allocation failed
+ERROR: Pipeline execution failed
+       Memory allocation failed
+DEDISP ERROR: Memory allocation failed
+ERROR: Pipeline execution failed
+       Memory allocation failed
+Beam 12 initiated.
+parallel1
+Total analysis time for parallel processing: 27.6430549622
+Beam 0 initiated.
+Beam 1 initiated.
+Beam 2 initiated.
+Beam 3 initiated.
+Beam 4 initiated.
+Beam 5 initiated.
+Beam 6 initiated.
+Beam 7 initiated.
+Beam 8 initiated.
+Beam 9 initiated.
+Beam 10 initiated.
+Beam 11 initiated.
+Beam 12 initiated.
+standard0
+Total analysis time for standard processing: 2705.07353902
+Beam 0 initiated.
+Beam 1 initiated.
+Beam 2 initiated.
+Beam 3 initiated.
+Beam 4 initiated.
+Beam 5 initiated.
+Beam 6 initiated.
+Beam 7 initiated.
+Beam 8 initiated.
+Beam 9 initiated.
+Beam 10 initiated.
+Beam 11 initiated.
+Killed
+Killed
+Killed
+DEDISP ERROR: Memory allocation failed
+ERROR: Pipeline execution failed
+DEDISP DEDISP ERROR: Memory allocation ERROR:
+ERROR: Pipeline execution failed
+       Memory allocation failed
+Killed
+ERROR: Memory allocation failed
+ERROR: Pipeline execution failed
+       Memory allocation failed
+Beam 12 initiated.
+parallel1
+Total analysis time for parallel processing: 26.5552821159
