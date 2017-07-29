@@ -1,0 +1,70 @@
+Traceback (most recent call last):
+  File "multibeam.py", line 115, in <module>
+    FRBs(destination, origin, parallel, dm_min, dm_max)
+  File "multibeam.py", line 78, in __init__
+    self.multibeam()
+  File "multibeam.py", line 67, in multibeam
+    self.run_heimdall_on_directory()
+  File "multibeam.py", line 35, in run_heimdall_on_directory
+    beams = os.listdir(self.origin)
+OSError: [Errno 2] No such file or directory: '/mnt_bls0/datax/users/Sabrina/FRB010125/'
+Traceback (most recent call last):
+  File "multibeam.py", line 115, in <module>
+    FRBs(destination, origin, parallel, dm_min, dm_max)
+  File "multibeam.py", line 78, in __init__
+    self.multibeam()
+  File "multibeam.py", line 67, in multibeam
+    self.run_heimdall_on_directory()
+  File "multibeam.py", line 35, in run_heimdall_on_directory
+    beams = os.listdir(self.origin)
+OSError: [Errno 2] No such file or directory: '/mnt_bls0/datax/users/Sabrina/FRB010724/'
+Traceback (most recent call last):
+  File "multibeam.py", line 115, in <module>
+    FRBs(destination, origin, parallel, dm_min, dm_max)
+  File "multibeam.py", line 78, in __init__
+    self.multibeam()
+  File "multibeam.py", line 67, in multibeam
+    self.run_heimdall_on_directory()
+  File "multibeam.py", line 35, in run_heimdall_on_directory
+    beams = os.listdir(self.origin)
+OSError: [Errno 2] No such file or directory: '/mnt_bls0/datax/users/Sabrina/FRB110626/'
+Traceback (most recent call last):
+  File "multibeam.py", line 115, in <module>
+    FRBs(destination, origin, parallel, dm_min, dm_max)
+  File "multibeam.py", line 78, in __init__
+    self.multibeam()
+  File "multibeam.py", line 67, in multibeam
+    self.run_heimdall_on_directory()
+  File "multibeam.py", line 35, in run_heimdall_on_directory
+    beams = os.listdir(self.origin)
+OSError: [Errno 2] No such file or directory: '/mnt_bls0/datax/users/Sabrina/FRB120127/'
+Traceback (most recent call last):
+  File "multibeam.py", line 115, in <module>
+    FRBs(destination, origin, parallel, dm_min, dm_max)
+  File "multibeam.py", line 78, in __init__
+    self.multibeam()
+  File "multibeam.py", line 67, in multibeam
+    self.run_heimdall_on_directory()
+  File "multibeam.py", line 35, in run_heimdall_on_directory
+    beams = os.listdir(self.origin)
+OSError: [Errno 2] No such file or directory: '/mnt_bls0/datax/users/Sabrina/FRB010621/'
+Traceback (most recent call last):
+  File "multibeam.py", line 115, in <module>
+    FRBs(destination, origin, parallel, dm_min, dm_max)
+  File "multibeam.py", line 78, in __init__
+    self.multibeam()
+  File "multibeam.py", line 67, in multibeam
+    self.run_heimdall_on_directory()
+  File "multibeam.py", line 35, in run_heimdall_on_directory
+    beams = os.listdir(self.origin)
+OSError: [Errno 2] No such file or directory: '/mnt_bls0/datax/users/Sabrina/FRB110220/'
+Traceback (most recent call last):
+  File "multibeam.py", line 115, in <module>
+    FRBs(destination, origin, parallel, dm_min, dm_max)
+  File "multibeam.py", line 78, in __init__
+    self.multibeam()
+  File "multibeam.py", line 67, in multibeam
+    self.run_heimdall_on_directory()
+  File "multibeam.py", line 35, in run_heimdall_on_directory
+    beams = os.listdir(self.origin)
+OSError: [Errno 2] No such file or directory: '/mnt_bls0/datax/users/Sabrina/FRB110703/'

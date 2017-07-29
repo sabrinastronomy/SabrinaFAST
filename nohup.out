@@ -1,0 +1,195 @@
+Loaded 102 candidates
+Classifying candidates...
+cands_per_second around 28.803499 was 0.166667 [max = 1.000000]
+Classified 101 as hidden 
+           0 as noise spikes
+           0 as coinc RFI [nbeam > 4]
+           0 as coinc RFI [mask_rule]
+           0 as galactic spikes
+           0 as RFI storm
+           1 as valid FRB candidates
+Done
+12.6603	28.8035	230428	792.229	4	5
+Beam 0 initiated.
+Beam 1 initiated.
+Beam 2 initiated.
+Beam 3 initiated.
+Beam 4 initiated.
+Beam 5 initiated.
+Beam 6 initiated.
+Beam 7 initiated.
+Beam 8 initiated.
+Beam 9 initiated.
+Beam 10 initiated.
+Beam 11 initiated.
+Beam 12 initiated.
+Loaded 735 candidates
+Classifying candidates...
+cands_per_second around 8056.040039 was 1.333333 [max = 1.000000]
+cands_per_second around 1726.689941 was 0.500000 [max = 1.000000]
+Classified 711 as hidden 
+           0 as noise spikes
+           0 as coinc RFI [nbeam > 4]
+           22 as coinc RFI [mask_rule]
+           0 as galactic spikes
+           1 as RFI storm
+           1 as valid FRB candidates
+Done
+38.4408	1726.69	1726694	366.489	4	6
+Beam 0 initiated.
+Beam 1 initiated.
+Beam 2 initiated.
+Beam 3 initiated.
+Beam 4 initiated.
+Beam 5 initiated.
+Beam 6 initiated.
+Beam 7 initiated.
+Beam 8 initiated.
+Beam 9 initiated.
+Beam 10 initiated.
+Beam 11 initiated.
+Beam 12 initiated.
+Loaded 2225 candidates
+Classifying candidates...
+cands_per_second around 227.046997 was 1.166667 [max = 1.000000]
+cands_per_second around 211.285995 was 4.833333 [max = 1.000000]
+cands_per_second around 132.477005 was 1.666667 [max = 1.000000]
+Classified 2214 as hidden 
+           0 as noise spikes
+           1 as coinc RFI [nbeam > 4]
+           5 as coinc RFI [mask_rule]
+           2 as galactic spikes
+           3 as RFI storm
+           0 as valid FRB candidates
+Done
+Beam 0 initiated.
+Beam 1 initiated.
+Beam 2 initiated.
+Beam 3 initiated.
+Beam 4 initiated.
+Beam 5 initiated.
+Beam 6 initiated.
+Beam 7 initiated.
+Beam 8 initiated.
+Beam 9 initiated.
+Beam 10 initiated.
+Beam 11 initiated.
+Beam 12 initiated.
+No FRB candidates found.
+Loaded 1648 candidates
+Classifying candidates...
+cands_per_second around 233.867004 was 1.500000 [max = 1.000000]
+cands_per_second around 187.725998 was 1.833333 [max = 1.000000]
+cands_per_second around 128.557999 was 0.833333 [max = 1.000000]
+cands_per_second around 59.159500 was 1.166667 [max = 1.000000]
+Classified 1641 as hidden 
+           0 as noise spikes
+           0 as coinc RFI [nbeam > 4]
+           3 as coinc RFI [mask_rule]
+           0 as galactic spikes
+           3 as RFI storm
+           1 as valid FRB candidates
+Done
+8.12549	128.558	2008721	0.714476	4	8
+Beam 0 initiated.
+Beam 1 initiated.
+Beam 2 initiated.
+Beam 3 initiated.
+Beam 4 initiated.
+Beam 5 initiated.
+Beam 6 initiated.
+Beam 7 initiated.
+Beam 8 initiated.
+Beam 9 initiated.
+Beam 10 initiated.
+Beam 11 initiated.
+Beam 12 initiated.
+Loaded 232 candidates
+Classifying candidates...
+cands_per_second around 340.229004 was 0.333333 [max = 1.000000]
+cands_per_second around 311.415009 was 0.333333 [max = 1.000000]
+cands_per_second around 279.300995 was 0.333333 [max = 1.000000]
+cands_per_second around 265.101013 was 0.666667 [max = 1.000000]
+Classified 228 as hidden 
+           0 as noise spikes
+           0 as coinc RFI [nbeam > 4]
+           0 as coinc RFI [mask_rule]
+           0 as galactic spikes
+           0 as RFI storm
+           4 as valid FRB candidates
+Done
+8.4386	265.101	1060403	15.9152	4	9
+14.801	279.301	1117202	744.713	4	10
+8.28655	311.415	1245659	13.7501	4	9
+8.02897	340.229	1360914	16.3849	4	9
+Beam 0 initiated.
+Beam 1 initiated.
+Beam 2 initiated.
+Beam 3 initiated.
+Beam 4 initiated.
+Beam 5 initiated.
+Beam 6 initiated.
+Beam 7 initiated.
+Beam 8 initiated.
+Beam 9 initiated.
+Beam 10 initiated.
+Beam 11 initiated.
+Beam 12 initiated.
+Loaded 1787 candidates
+Classifying candidates...
+cands_per_second around 209.093994 was 2.000000 [max = 1.000000]
+cands_per_second around 161.709000 was 1.333333 [max = 1.000000]
+cands_per_second around 148.050003 was 1.500000 [max = 1.000000]
+cands_per_second around 19.477100 was 0.666667 [max = 1.000000]
+Classified 1778 as hidden 
+           0 as noise spikes
+           0 as coinc RFI [nbeam > 4]
+           5 as coinc RFI [mask_rule]
+           0 as galactic spikes
+           3 as RFI storm
+           1 as valid FRB candidates
+Done
+8.45186	19.4771	304329	0.0340271	4	10
+Beam 0 initiated.
+Beam 1 initiated.
+Beam 2 initiated.
+Beam 3 initiated.
+Beam 4 initiated.
+Beam 5 initiated.
+Beam 6 initiated.
+Beam 7 initiated.
+Beam 8 initiated.
+Beam 9 initiated.
+Beam 10 initiated.
+Beam 11 initiated.
+Beam 12 initiated.
+Loaded 1632 candidates
+Classifying candidates...
+cands_per_second around 183.128006 was 1.166667 [max = 1.000000]
+cands_per_second around 148.391998 was 1.833333 [max = 1.000000]
+cands_per_second around 145.199005 was 1.000000 [max = 1.000000]
+cands_per_second around 118.607002 was 2.166667 [max = 1.000000]
+cands_per_second around 108.263000 was 1.333333 [max = 1.000000]
+cands_per_second around 93.570198 was 1.500000 [max = 1.000000]
+Classified 1621 as hidden 
+           0 as noise spikes
+           0 as coinc RFI [nbeam > 4]
+           5 as coinc RFI [mask_rule]
+           0 as galactic spikes
+           6 as RFI storm
+           0 as valid FRB candidates
+Done
+Beam 0 initiated.
+Beam 1 initiated.
+Beam 2 initiated.
+Beam 3 initiated.
+Beam 4 initiated.
+Beam 5 initiated.
+Beam 6 initiated.
+Beam 7 initiated.
+Beam 8 initiated.
+Beam 9 initiated.
+Beam 10 initiated.
+Beam 11 initiated.
+Beam 12 initiated.
+No FRB candidates found.

@@ -6,8 +6,8 @@ import argparse
 
 
 class multibeamFRBFinder:
-    def __init__(self, FRB_cand_filename, origin, parallel, dm_min, dm_max, dm_tol=1.01, rfi_tol=3,
-                 boxcar_max=16, snr_cut=10, filter_cut=16, max_cands_per_sec=1, nbeams_cut=1):
+    def __init__(self, FRB_cand_filename, origin, parallel, dm_min, dm_max, dm_tol, rfi_tol,
+                 boxcar_max, snr_cut, filter_cut, max_cands_per_sec, nbeams_cut):
         self.FRB_cand_filename = FRB_cand_filename
         self.origin = origin
         self.destination = os.getcwd() + "/" + FRB_cand_filename + "_candidates"
@@ -72,12 +72,12 @@ class multibeamFRBFinder:
 
 class FRBs(multibeamFRBFinder):
     def __init__(self, FRB_cand_filename, origin, parallel, dm_min, dm_max, dm_tol=1.01, rfi_tol=3,
-                 boxcar_max=16, snr_cut=10, filter_cut=16, max_cands_per_sec=1, nbeams_cut=1):
+                 boxcar_max=16, snr_cut=8, filter_cut=16, max_cands_per_sec=1, nbeams_cut=4):
         multibeamFRBFinder.__init__(self, FRB_cand_filename, origin, parallel, dm_min, dm_max, dm_tol, rfi_tol,
                                    boxcar_max, snr_cut, filter_cut, max_cands_per_sec, nbeams_cut)
         self.multibeam()
-        if os.stat(self.FRB_cand_filename).st_size is not 0:  # st_size: size of file, in bytes
-            self.frb_cands = np.loadtxt(self.FRB_cand_filename,
+        if os.stat(self.destination + "/" + self.FRB_cand_filename).st_size is not 0:  # st_size: size of file, in bytes
+            self.frb_cands = np.loadtxt(self.destination + "/" + self.FRB_cand_filename,
                                         dtype={'names': ('snr', 'time', 'samp_idx', 'dm', 'filter', 'prim_beam'),
                                                'formats': ('f4', 'f4', 'i4', 'f4', 'i4', 'i4')})
         else:
