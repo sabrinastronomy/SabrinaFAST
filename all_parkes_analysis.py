@@ -1,4 +1,3 @@
-from multibeam_heimdall import run_heimdall_on_directory
 import subprocess
 
 if __name__ == "__main__":

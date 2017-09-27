@@ -72,7 +72,7 @@ class multibeamFRBFinder:
 
 class FRBs(multibeamFRBFinder):
     def __init__(self, FRB_cand_filename, origin, parallel, dm_min, dm_max, dm_tol=1.01, rfi_tol=3,
-                 boxcar_max=16, snr_cut=8, filter_cut=16, max_cands_per_sec=1, nbeams_cut=4):
+                 boxcar_max=16, snr_cut=6, filter_cut=16, max_cands_per_sec=5, nbeams_cut=4):
         multibeamFRBFinder.__init__(self, FRB_cand_filename, origin, parallel, dm_min, dm_max, dm_tol, rfi_tol,
                                    boxcar_max, snr_cut, filter_cut, max_cands_per_sec, nbeams_cut)
         self.multibeam()
