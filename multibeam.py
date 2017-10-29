@@ -59,8 +59,8 @@ class multibeamFRBFinder:
         current_directory = os.getcwd()
         os.chdir(self.destination)
         self.coincidencer()
-        subprocess.call("/home/sabrinaberger/FAST/frb_detector.py -cands_file *_all.cand -snr_cut %f -filter_cut %d -nbeams_cut %d -max_cands_per_sec %f -verbose" % (self.snr_cut, self.filter_cut, self.nbeams_cut, self.max_cands_per_sec), shell=True)
-        subprocess.call("/home/sabrinaberger/FAST/frb_detector.py -cands_file *_all.cand -snr_cut %f -filter_cut %d -nbeams_cut %d -max_cands_per_sec %f > %s" % (self.snr_cut, self.filter_cut, self.nbeams_cut, self.max_cands_per_sec, self.FRB_cand_filename), shell=True)
+        subprocess.call("/home/sabrinaberger/FAST/frb_detector_bl.py -cands_file *_all.cand -snr_cut %f -filter_cut %d -nbeams_cut %d -max_cands_per_sec %f -verbose" % (self.snr_cut, self.filter_cut, self.nbeams_cut, self.max_cands_per_sec), shell=True)
+        subprocess.call("/home/sabrinaberger/FAST/frb_detector_bl.py -cands_file *_all.cand -snr_cut %f -filter_cut %d -nbeams_cut %d -max_cands_per_sec %f > %s" % (self.snr_cut, self.filter_cut, self.nbeams_cut, self.max_cands_per_sec, self.FRB_cand_filename), shell=True)
         os.chdir(current_directory)
 
     def multibeam(self):
@@ -72,7 +72,7 @@ class multibeamFRBFinder:
 
 class FRBs(multibeamFRBFinder):
     def __init__(self, FRB_cand_filename, origin, parallel, dm_min, dm_max, dm_tol=1.01, rfi_tol=3,
-                 boxcar_max=16, snr_cut=8, filter_cut=16, max_cands_per_sec=1, nbeams_cut=4):
+                 boxcar_max=16, snr_cut=6, filter_cut=16, max_cands_per_sec=5, nbeams_cut=4):
         multibeamFRBFinder.__init__(self, FRB_cand_filename, origin, parallel, dm_min, dm_max, dm_tol, rfi_tol,
                                    boxcar_max, snr_cut, filter_cut, max_cands_per_sec, nbeams_cut)
         self.multibeam()
