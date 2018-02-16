@@ -5,8 +5,8 @@ import os
 
 
 # Change when you have information about where filterbank/candidate files will be stored for each beam
-data_directory_default = '/home/sabrinaberger/test_candidates/'
-plot_directory_default = '/home/sabrinaberger/test_plots/'
+data_directory_default = '/home/sabrinaberger/FAST/test_candidates/'
+plot_directory_default = '/home/sabrinaberger/FAST/test_plots/'
 
 
 
@@ -33,8 +33,7 @@ class plot:
   -interactive
   -verbose
     """
-	def __init__(self, all_cands_file = "*_all.cand", nbeams = 19, snr_cut=6, beam_mask = 65536, nbeams_cut=4, filter_cut=16, multibeam = False, 
-		data_directory = data_directory_default, plot_directory = plot_directory_default):
+	def __init__(self, all_cands_file = "*_all.cand", nbeams = 19, snr_cut=6, beam_mask = 65536, nbeams_cut=4, filter_cut=16, multibeam = False, data_directory = data_directory_default, plot_directory = plot_directory_default):
 		self.all_cands_file = all_cands_file
 		self.nbeams = nbeams
 		self.snr_cut = snr_cut
