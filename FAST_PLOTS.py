@@ -45,21 +45,21 @@ class plot:
     self.data_directory = data_directory
     self.plot_directory = plot_directory
 
-def make_overview_plot(self):
-  # Directory already exists
-  if (os.path.isdir(self.plot_directory)):
-    subprocess.call('cd ' + self.plot_directory, shell=True)
+  def make_overview_plot(self):
+    # Directory already exists
+    if (os.path.isdir(self.plot_directory)):
+      subprocess.call('cd ' + self.plot_directory, shell=True)
 
-  else:
-      # Make directory to save plots to
-    subprocess.call('mkdir CandidatePlots', shell=True)
-    subprocess.call('cd CandidatePlots', shell=True)
+    else:
+        # Make directory to save plots to
+      subprocess.call('mkdir CandidatePlots', shell=True)
+      subprocess.call('cd CandidatePlots', shell=True)
 
-  # Make overview plot - input: *all.cand file
-  subprocess.call(
-      'python trans_gen_overview.py -cands_file {all_cand} -nbeam {nbeams} -snr_cut {snr_cut} -beam_mask {beam_mask} -nbeams_cut {nbeams_cut} -filter_cut {filter_cut}'
-      .format(all_cand=self.all_cands_file, nbeams=self.nbeams, snr_cut=self.snr_cut, beam_mask=self.beam_mask,
-              nbeams_cut=self.nbeams_cut, filter_cut=self.filter_cut))
+    # Make overview plot - input: *all.cand file
+    subprocess.call(
+        'python trans_gen_overview.py -cands_file {all_cand} -nbeam {nbeams} -snr_cut {snr_cut} -beam_mask {beam_mask} -nbeams_cut {nbeams_cut} -filter_cut {filter_cut}'
+        .format(all_cand=self.all_cands_file, nbeams=self.nbeams, snr_cut=self.snr_cut, beam_mask=self.beam_mask,
+                nbeams_cut=self.nbeams_cut, filter_cut=self.filter_cut))
 
 
 if __name__ == "__main__":
