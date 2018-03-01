@@ -34,7 +34,7 @@ class plot:
       -interactive
       -verbose
     """
-
+    print("Initializing plotting instance...")
     self.all_cands_file = all_cands_file
     self.nbeams = nbeams
     self.snr_cut = snr_cut
@@ -55,8 +55,11 @@ class plot:
       subprocess.call('mkdir CandidatePlots', shell=True)
       subprocess.call('cd CandidatePlots', shell=True)
 
+    # TO DO make this better string
     # Make overview plot - input: *all.cand file
-    plot_call = 'python /home/sabrinaberger/FAST/plotting_scripts/trans_gen_overview.py -cands_file {all_cand} -nbeam {nbeams} -snr_cut {snr_cut} -beam_mask {beam_mask} -nbeams_cut {nbeams_cut} -filter_cut {filter_cut}'.format(all_cand=self.all_cands_file, nbeams=self.nbeams, snr_cut=self.snr_cut, beam_mask=self.beam_mask, nbeams_cut=self.nbeams_cut, filter_cut=self.filter_cut
+    nplot_call = 'python /home/sabrinaberger/FAST/plotting_scripts/trans_gen_overview.py -cands_file ' + self.all_cands_file + ' -nbeam ' +  str(self.nbeams) + ' -snr_cut ' + str(self.snr_cut) + ' -beam_mask ' + str(self.beam_mask) + ' -nbeams_cut ' + str(self.nbeams_cut) + ' -filter_cut ' + str(self.filter_cut)
+    subprocess.call(nplot_call, shell=True)
+
 
 if __name__ == "__main__":
   testing_plot = plot()
