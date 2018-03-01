@@ -5,7 +5,7 @@ import subprocess
 
 # Change when you have information about where filterbank/candidate files will be stored for each beam
 data_directory_default = '/home/sabrinaberger/FAST/test_candidates/'
-plot_directory_default = '/home/sabrinaberger/FAST/test_plots/'
+plot_directory_default = '/home/sabrinaberger/FAST/CandidatePlots/'
 
 
 class plot:
@@ -56,11 +56,7 @@ class plot:
       subprocess.call('cd CandidatePlots', shell=True)
 
     # Make overview plot - input: *all.cand file
-    subprocess.call(
-        'python trans_gen_overview.py -cands_file {all_cand} -nbeam {nbeams} -snr_cut {snr_cut} -beam_mask {beam_mask} -nbeams_cut {nbeams_cut} -filter_cut {filter_cut}'
-        .format(all_cand=self.all_cands_file, nbeams=self.nbeams, snr_cut=self.snr_cut, beam_mask=self.beam_mask,
-                nbeams_cut=self.nbeams_cut, filter_cut=self.filter_cut))
-
+    plot_call = 'python /home/sabrinaberger/FAST/plotting_scripts/trans_gen_overview.py -cands_file {all_cand} -nbeam {nbeams} -snr_cut {snr_cut} -beam_mask {beam_mask} -nbeams_cut {nbeams_cut} -filter_cut {filter_cut}'.format(all_cand=self.all_cands_file, nbeams=self.nbeams, snr_cut=self.snr_cut, beam_mask=self.beam_mask, nbeams_cut=self.nbeams_cut, filter_cut=self.filter_cut
 
 if __name__ == "__main__":
   testing_plot = plot()
